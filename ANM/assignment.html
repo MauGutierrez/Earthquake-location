@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/assignment.css" rel="stylesheet">
+   </head>
+   <body class="nav-md">
+      <div class="container body">
+         <div class="main_container">
+            <!-- page content -->
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                     <div class="x_title">
+                        <h2> Earthquake search </h2>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content">
+                        <input id="Location" type="text" placeholder="City/Location"/>
+                        <div id="map_canvas" class="col-md-8 col-sm-12 col-xs-12"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                     <div class="x_title">
+                        <h2> Top Earthquakes from last year </h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                           <a href="#" id="update"><i class="fa fa-refresh"></i></a>    
+                        </ul>
+                        </ul>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content">
+                        <table class="table table-bordered table-dark">
+                           <thead>
+                              <tr>
+                                 <th>#</th>
+                                 <th>Magnitude</th>
+                                 <th>Depth</th>
+                                 <th>Date</th>
+                              </tr>
+                           </thead>
+                           <tbody id="table-earthquake">
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /page content -->
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSt9lKApErGeZRfqlzmUnD7oPP-XWyn_U&libraries=places&callback=initialize" async defer></script>
+      <script type="text/javascript" src="js/add_map.js"></script>
+   </body>
+</html>
